@@ -1,2 +1,2 @@
 #!/bin/bash
-{ ls -1Ap | sed -e ':a' -e 'N' -e '$!ba' -e 's/\n/, /g' -e 's/,$/\n/'; echo ""; } | sed 's/103-commas, /103-commas\n/g'
+ls -1Ap | sed -e ':a' -e 'N' -e '$!ba' -e 's/\n/, /g' -e 's/,$/\n/'
