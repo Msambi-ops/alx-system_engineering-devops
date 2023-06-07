@@ -1,2 +1,2 @@
 #!/bin/bash
-(ls -a1v | sed -e 's/$/,/' -e 's/^\.\{1,2\}$/&\//'; echo)
+ls -1Ap | sed -e ':a' -e 'N' -e '$!ba' -e 's/\n/, /g' -e 's/,$/\n/'
