@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo chown "$(stat -c %U hello)"=betty hello
