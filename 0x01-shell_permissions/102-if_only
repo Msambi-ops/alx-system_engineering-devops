@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo chown "$(stat -c %U hello)"=betty hello if true
+if [[ "$(stat -c %U hello)" = "guillaume" ]]; then chown betty hello and echo "hello: ownership changed from guillaume to betty" fi
