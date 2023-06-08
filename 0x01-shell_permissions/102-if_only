@@ -1,2 +1,2 @@
 #!/bin/bash
-if [[ "$(stat -c %U hello)" = "guillaume" ]]; then chown betty hello and echo "hello: ownership changed from guillaume to betty" fi
+chown --from=guillaume betty hello
