@@ -1,2 +1,2 @@
 #!/bin/bash
-case "$1" in encode) echo "$2" | tr 'A-Za-z' 'N-ZA-Mn-za-m' ;; decode) echo "$2" | tr 'N-ZA-Mn-za-m' 'A-Za-z' ;; *) echo "Usage: $0 <encode/decode> <message>" >&2 ;; esac
+tr 'A-Za-z' 'N-ZA-Mn-za-m'
